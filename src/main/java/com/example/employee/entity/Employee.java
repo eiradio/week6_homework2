@@ -1,5 +1,6 @@
 package com.example.employee.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -7,10 +8,15 @@ import javax.persistence.Id;
 public class Employee {
     @Id
     private int id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "age")
     private int age;
+    @Column(name = "gender")
     private String gender;
+    @Column(name = "companyId")
     private int companyId;
+    @Column(name = "salary")
     private int salary;
 
     protected Employee() {}

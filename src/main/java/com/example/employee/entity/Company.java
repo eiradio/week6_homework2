@@ -1,5 +1,6 @@
 package com.example.employee.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -7,7 +8,9 @@ import javax.persistence.Id;
 public class Company {
     @Id
     private int id;
+    @Column(name = "companyName")
     private String companyName;
+    @Column(name = "employeesNumber")
     private int employeesNumber;
 
     protected Company(){}
